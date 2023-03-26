@@ -6,7 +6,9 @@
   color: #fffefe;
   text-align: center;
   font-family: cursive;
-  opacity: 0.8;
+  opacity: 0.9;
+  z-index: 100;
+  font-size: 30px;
 }
 
 .countdown-header {
@@ -25,7 +27,6 @@
 }
 
 .big-countdown .txt-countdown {
-  font-size: 22px;
   display: block;
   line-height: 1;
   font-family: cursive;
@@ -39,7 +40,7 @@
   padding: 20px 15px;
   min-width: 140px;
   background: rgba(255,255,255,.8);
-  color: #000;
+  color: #000000;
   border-radius: 10px 10px 0 0;
   text-shadow: 1px 1px 0 #fff;
 }
