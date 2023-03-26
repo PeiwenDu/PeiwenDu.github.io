@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: '../img/',
+        url: 'https://github.com/PeiwenDu/PeiwenDu.github.io/tree/main/assets/img',
         success: function(data) {
             $(data).find('a').attr('href', function(index, value) {
                 if (value.match(/\.(jpe?g|png|gif)$/)) {
