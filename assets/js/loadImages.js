@@ -1,13 +1,12 @@
 $(document).ready(function() {
-    $.ajax({
-        url: 'https://github.com/PeiwenDu/PeiwenDu.github.io/tree/main/assets/img',
-        success: function(data) {
-            $(data).find('a').attr('href', function(index, value) {
-                if (value.match(/\.(jpe?g|png|gif)$/)) {
-                    const img = $('<img>').attr('src', 'images/' + value).addClass('slide');
-                    $('.containerSlider').append(img);
-                }
-            });
-        }
+    const repoUrl = 'https://api.github.com/repos/PeiwenDu/PeiwenDu.github.io/contents/assets/img/';
+    $.getJSON(repoUrl, function(data) {
+        $.each(data, function(i, item) {
+            if (item.type === 'file' && item.name.match(/\.(jpe?g|png|gif)$/)) {
+                const imageUrl = item.download_url;
+                const img = $('<img>').attr('src', imageUrl).addClass('slide');
+                $('.containerSlider').append(img);
+            }
+        });
     });
 });
