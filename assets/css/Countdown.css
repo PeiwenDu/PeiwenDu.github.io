@@ -1,10 +1,12 @@
 .countdown-section {
   padding: 30px 0 60px;
-  background: #2980b9;
+  background: #917272;
   background: -webkit-linear-gradient(to right, #114357, #2980b9);
-  background: linear-gradient(to right, #114357, #2980b9);
-  color: #ffffff;
+  background: linear-gradient(to right, #917272, #917272);
+  color: #fffefe;
   text-align: center;
+  font-family: cursive;
+  opacity: 0.8;
 }
 
 .countdown-header {
@@ -26,6 +28,7 @@
   font-size: 22px;
   display: block;
   line-height: 1;
+  font-family: cursive;
 }
 
 .boxed-countdown :not(.countdown-header) p {
