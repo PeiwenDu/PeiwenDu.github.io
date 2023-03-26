@@ -1,0 +1,20 @@
+body {
+  font-family: Lora,Helvetica Neue,Helvetica,Arial,sans-serif;
+  position: relative;
+  color: #712929;
+  background-color: #917272;
+}
+
+.content-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.download-section {
+  height: 800px;
+  color: #712929;
+  background-color: #917272;
+  background-size: cover;
+}
+

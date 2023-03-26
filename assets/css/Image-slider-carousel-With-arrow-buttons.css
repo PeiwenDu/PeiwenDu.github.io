@@ -1,0 +1,34 @@
+.containerSlider {
+  /*position: absolute;*/
+  margin-left: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  max-width: 80%;
+  height: 100%;
+}
+
+.containerSlider img {
+  width: 90%;
+  height: 70%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.slide {
+  border: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 2s linear;
+  -moz-transition: opacity 2s linear;
+  -o-transition: opacity 2s linear;
+  transition: opacity 2s linear;
+}
+
+.showMe {
+  opacity: 1;
+}
+
