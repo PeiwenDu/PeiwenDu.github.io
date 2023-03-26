@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: '../img/',
+        url: '/assets/img/',
         success: function(data) {
             $(data).find('a').attr('href', function(index, value) {
                 if (value.match(/\.(jpe?g|png|gif)$/)) {
