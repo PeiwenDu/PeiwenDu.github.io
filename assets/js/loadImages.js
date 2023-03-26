@@ -4,14 +4,12 @@ $(document).ready(function() {
         $.each(data, function(i, item) {
             if (item.type === 'file' && item.name.match(/\.(jpe?g|png|gif)$/)) {
                 const imageUrl = item.download_url;
-                const img = $('<img>')
-                    .attr({
-                        src: imageUrl,
-                        id: 'slideimg' + i
-                    })
-                    .addClass('slide');
+                var img;
+                console.log(i);
                 if (i == 0) {
-                    img.addClass('showMe');
+                    img = $('<img>').attr('src', imageUrl).attr('id', 'slideimg' + i).addClass('slide').addClass('showMe');
+                } else {
+                    img = $('<img>').attr('src', imageUrl).attr('id', 'slideimg' + i).addClass('slide');
                 }
                 $('.containerSlider').append(img);
             }
