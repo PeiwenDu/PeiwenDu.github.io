@@ -1,56 +1,55 @@
 .containerSlider .slide {
-  position: absolute;
-  width: 90%;
-  height: 70%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .slide {
-  border: none;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  -webkit-transition: opacity 1s linear;
-  -moz-transition: opacity 1s linear;
-  -o-transition: opacity 2s linear;
-  transition: opacity 1s linear;
+    border: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 2s linear;
+    transition: opacity 1s linear;
 }
 
 .showMe {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .arrowRight:hover {
-  transition: opacity .5s;
-  opacity: 0.8;
+    transition: opacity .5s;
+    opacity: 0.8;
 }
 
 .arrowLeft:hover {
-  transition: opacity .5s;
-  opacity: 0.8;
+    transition: opacity .5s;
+    opacity: 0.8;
 }
 
 .arrowRight {
-  border: none;
-  cursor: pointer;
-  opacity: 0.6;
-  width: 30%;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    width: 30%;
 }
 
 .arrowLeft {
-  border: none;
-  cursor: pointer;
-  opacity: 0.6;
-  width: 30%;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    width: 30%;
 }
 
 .containerSliderArrow {
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
